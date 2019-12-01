@@ -1,0 +1,36 @@
+Gracz Heroesów który przygotowuje się do finalnej bitwy. 
+Ma na to tydzień (jedną turę). Posiada trzy zamki produkujące jednostki bojowe. 
+Każda z jednostek ma określone parametry bojowe - ruch, obrona, atak, 
+punkty życia, przyrost tygodniowy, i koszt. 
+Ma określoną ilość złota do wykorzystania. 
+Określ maksymalną siłę jednostek, bez przekroczenia limitu.
+
+Zamek
+Jednostki: {"Pikinier”, "Łucznik”, "Gryf", "Zbrojny", "Mnich", "Kawalerzysta", "Anioł"}
+Przyrost = {}
+Ruch = {}
+Obrona = {} 
+Atak = {}
+Punkty życia = {}
+Koszt = {}
+
+Bastion
+Jednostki: {"Troglodyta”, "Harpia", "Złe oko", "Meduza", "Minotaur", "Mantikora", "Czerwony smok"}
+Przyrost = {}
+Ruch = {}
+Obrona = {}
+Atak = {}
+Punkty życia = {}
+Koszt = {}
+
+Nekropolia
+Jednostki: {"Szkielet", "Ożywieniec", "Zjawa", "Wampir", "Lisz", "Czarny Rycerz", "Kościany smok"}
+Przyrost = {}
+Ruch = {}
+Obrona = {}
+Atak = {}
+Punkty życia = {}
+Koszt = {}
+
+
+

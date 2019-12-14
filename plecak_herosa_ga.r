@@ -4,7 +4,7 @@
 #Gracz musi zebrac jednostki do bitwy.
 #Gracz moze miec 8 jednostek jednoczesnie.
 #Każda z jednostek ma swoją wartość bojową.
-#Gracz ma do wykorzystania złotych monet.
+#Gracz ma do wykorzystania 300 złotych monet.
 #Określ optymalny skład armii z zachowaniem limitu miejsca i kosztu.
 
 #------------------------------------------------#

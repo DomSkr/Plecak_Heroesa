@@ -5,7 +5,7 @@
 #Gracz moze miec 8 jednostek jednoczesnie.
 #Każda z jednostek ma swoją wartość bojową.
 #Gracz ma do wykorzystania złotych monet.
-#Określ optymalny skład armii za zachowaniem limitu miejsca i kosztu.
+#Określ optymalny skład armii z zachowaniem limitu miejsca i kosztu.
 
 #------------------------------------------------#
 #instalacja i import paczki "GA"
@@ -18,7 +18,7 @@ armia = data.frame(
                 "Troglodyta", "Harpia", "Złe oko", "Meduza", "Minotaur", "Mantikora", "Czerwony smok",
                 "Szkielet", "Ożywieniec", "Zjawa", "Wampir", "Lisz", "Czarny Rycerz", "Kościany smok",
                 "Goblin", "Wilczy jeździec", "Ork", "Ogr", "Rok", "Cyklop", "Behemot"),
-  wartosc = c(10, 25, 28, 35, 61, 82, 102, 
+  wartosc_bojowa = c(10, 25, 28, 35, 61, 82, 102, 
               4, 14, 21, 30, 54, 70, 102, 
               8, 19, 23, 38, 49, 66, 102, 
               11, 24, 28, 55, 59, 93, 102),
@@ -33,7 +33,7 @@ armiaKosztMax = 300
 
 #Definiujemy funkcję przystosowania
 fitnessFunc = function(chr) {
-  calkowitaWartoscChr = chr %*% armia$wartosc
+  calkowitaWartoscChr = chr %*% armia$wartosc_bojowa
   calkowitykosztChr = chr %*% armia$koszt
   print(calkowitaWartoscChr)
   print(calkowitykosztChr)
@@ -61,7 +61,7 @@ decode=function(chr){
   print("Rozwiązanie: ")
   print( armia[chr == 1, ] )
   print( paste("Koszt armii =",chr %*% armia$koszt) )
-  print( paste("Wartość bojowa jednostek =",chr %*% armia$wartosc) )
+  print( paste("Wartość bojowa jednostek =",chr %*% armia$wartosc_bojowa) )
 }
 decode(wyniki@solution[1,])
 
